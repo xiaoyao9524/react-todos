@@ -1,0 +1,103 @@
+body, h1, h3{
+  margin: 0px;
+}
+.hide {
+  display: none !important;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+li {
+  margin: 0;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#root {
+  .todo {
+    .header {
+      width: 100%;
+      height: 40px;
+      background: #cc5647;
+      .title {
+        margin: 0 auto;
+        width: 720px;
+        line-height: 40px;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    .add {
+      margin: 0 auto;
+      width: 720px;
+      .add-title {
+        font-size: 16px;
+        line-height: 56px;
+        color: #222;
+      }
+      .add-input {
+        padding: 0 15px;
+        width: 684px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+        border: 2px solid #ccc;
+      }
+      .information-wrapper {
+        font-size: 14px;
+        line-height: 50px;
+        .information {
+          float: left;
+          color: #cd5542;
+        }
+        .button-box {
+          float: right;
+          button {
+            float: left;
+            line-height: 50px;
+            background: transparent;
+            border: none;
+          }
+        }
+      }
+    }
+    .list-wrapper {
+      margin: 0 auto;
+      width: 720px;
+      h3 {
+
+      }
+      .todo-list {
+        .item {
+          font-size: 0;
+          padding: 0 10px;
+          height: 50px;
+          background: #ffffff;
+          border-bottom: 1px solid #ededed;
+          .check {
+  
+          }
+          .content {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 50px;
+          }
+          .del {
+            display: none;
+          }
+          &:hover .del {
+            display: inline;
+          }
+        }
+        .done {
+          .content {
+            text-decoration:line-through;
+          }
+        }
+      }
+    }
+  }
+}
